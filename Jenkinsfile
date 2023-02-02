@@ -31,7 +31,7 @@ environment {
 //============================================================================================
        stage('Create Docker') {
             steps {
-               sh "docker build -t $DOCKER_REGISTRY/$DOCKER_REPOSITORY:$IMAGE_TAG . -f Dockerfile"
+               sh "docker build -t $DOCKER_REGISTRY/$DOCKER_REPOSITORY:$IMAGE_TAG . -f dockerfile"
             }
         }
 //============================================================================================        
